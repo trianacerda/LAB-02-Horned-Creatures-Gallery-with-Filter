@@ -1,13 +1,11 @@
 import React, { Component } from 'react';
-import images from './image-data.js'
 import ImageItem from './ImageItem.js';
 
 class ImageList extends Component {
     state = {  }
     render() { 
-        const image = images;
         return ( 
-            image.map((item, index) =>
+            this.props.creaturesOnPage.map((item, index) =>
             <ImageItem
             key={index}
             keyword={item.keyword}
