@@ -17,13 +17,17 @@ class App extends Component {
       (image)=> image.keyword === this.state.keyword || this.state.keyword === 'All Creatures' 
     );
     const keywords = ['pick one', 'narwhal', 'rhino', 'unicorn', 'unilego', 'triceratops', 'markhor', 'mouflon', 'addax', 'chameleon', 'lizard', 'dragon'];
-    // const horns = ['']
-    console.log(filteredCreatures);
+    const horns = [1,2,3,100]
     return ( 
       <div className="App">
         <h1>--HORNED CREATURES--</h1>
         <select onChange={this.pickChange}>
           {keywords.map((item, index) => (
+            <option key={index} value={item}>{item}</option>
+          ))
+          }
+          <select onChange={this.pickChange}></select>
+          {horns.map((item, index) => (
             <option key={index} value={item}>{item}</option>
           ))
           }
