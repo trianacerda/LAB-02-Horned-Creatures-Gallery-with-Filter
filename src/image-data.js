@@ -66,7 +66,7 @@ const images = [
     id:8,
     url:
       "https://vignette.wikia.nocookie.net/landbeforetime/images/c/c3/Cera_infobox.png/revision/latest?cb=20180422005003",
-    title: "Cera",
+    title: "CerDa",
     description:
       "Three horns but still, horns. And who doesn't like The Land Before Time?",
     keyword: "triceratops",
