@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 class Dropdown extends Component {
     render() { 
-        const { options, changeEvent, label } = this.props;
+        const { label, options, changeEvent  } = this.props;
         return ( 
             <div className='dropdown-container'>
             <label>{ label }</label> 
