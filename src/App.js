@@ -6,7 +6,7 @@ import images from './image-data';
 
 
 class App extends Component {
-  state = { 
+  state = {
     keyword: 'All Creatures',
     horns: 'All Creatures'
    };
@@ -28,15 +28,13 @@ class App extends Component {
     return ( 
       <div className="App">
         <h1>--HORNED CREATURES--</h1>
-        <p>KEYWORDS</p>
         <Dropdown
-        label='keywords'
+        label='KEYWORDS'
         options={keywords}
         changeEvent={this.pickKeywords}
         />
-        <p>HORNS</p>
         <Dropdown
-        label='horns'
+        label='HORNS'
         options ={hornsOptions}
         changeEvent={this.pickHorns} 
         />
