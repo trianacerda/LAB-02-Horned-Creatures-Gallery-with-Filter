@@ -12,7 +12,6 @@ class Dropdown extends Component {
             ))
             }
             </select>
-        
         </div>
         );
     }
